@@ -1,0 +1,36 @@
+<!--水平布局-两列-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="http://cdn.static.runoob.com/libs/jquery/1.10.2/jquery.min.js">
+		</script>
+		<style>
+		.div2,.div3{
+			float: left
+		}
+		</style>
+	</head>
+	<body>
+		<div id="1" style="width:100%">
+			<div class="div2" style="width: 200px;background-color: #66ccff;">
+				1
+			</div>
+			<div calss="div3" style="background: #f00;">
+				2
+			</div>
+		</div>
+		<table border="1px" cellspacing="" cellpadding="">
+			<tr><td width="200px">Data</td><td class="rest"></td></tr>
+		</table>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload=function(){
+		$(window).resize();
+	}
+	$(window).resize(function() {
+		$('.rest').css('width',$(window).width()-20);
+	});
+</script>

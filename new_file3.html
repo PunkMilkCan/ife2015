@@ -1,0 +1,46 @@
+<!--Grid布局-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.grid-1 {
+			  display: grid;
+			  grid-template-columns: 150px 20px 150px 20px 150px;
+			  grid-template-rows: auto 20px auto 20px auto
+			}
+			.item-1{ background: #b03532; grid-column: 1; grid-row: 1; } 
+			.item-2 { background: #33a8a5; grid-column: 3; grid-row: 1; } 
+			.item-3 { background: #30997a; grid-column: 5; grid-row: 1; } 
+			.item-4 { background: #6a478f; grid-column: 1; grid-row: 3; } 
+			.item-5 { background: #da6f2b; grid-column: 3; grid-row: 3; } 
+			.item-6 { background: #3d8bb1; grid-column: 5; grid-row: 3; } 
+			.item-7 { background: #e03f3f; grid-column: 1; grid-row: 5; } 
+			.item-8 { background: #59a627; grid-column: 3; grid-row: 5; } 
+			.item-9 { background: #4464a1; grid-column: 5; grid-row: 5; }
+			.grid-2 { display: grid; grid-template-columns: 150px auto 150px; grid-template-rows: minmax(150px, auto) minmax(300px,auto); }
+		</style>
+	</head>
+	<body>
+		<section class="grid-1"> 
+			<div class="item-1">1</div> 
+			<div class="item-2">2</div> 
+			<div class="item-3">3</div> 
+			<div class="item-4">4</div> 
+			<div class="item-5">5</div> 
+			<div class="item-6">6</div> 
+			<div class="item-7">7</div> 
+			<div class="item-8">8</div> 
+			<div class="item-9">9</div>
+		</section>
+		<div class="grid-2"> 
+			<div class="item-11">1</div> 
+			<div class="item-21">2</div> 
+			<div class="item-31">3</div> 
+			<div class="item-41">4</div> 
+			<div class="item-51">5</div> 
+			<div class="item-61">6</div> 
+		</div>
+	</body>
+</html>

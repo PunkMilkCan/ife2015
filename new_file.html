@@ -1,0 +1,27 @@
+<!--定位测试1-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div style="text-align: center;">
+			<div style="width: 960px;height:10px;background-color: #F00;margin: 0 auto;">
+				div1
+			</div>
+		</div>
+		
+		<div>
+			<div style="display: none;'width: 960px;height:10px;position:fixed;left:50%;top:50%;margin-left:-480px;margin-top:-5px;background-color: #F00;">
+				div2
+			</div>
+		</div>
+		
+		<div style="position:relative">
+			<div style="width: 960px;height:10px;position:absolute;top:50%;transform:translateY(-50%);background-color: #F00;">
+				div2
+			</div>
+		</div>
+	</body>
+</html>
